@@ -12,20 +12,30 @@ import ExhibitsPage from './pages/ExhibitsPage';
 import ExhibitInfoPage from './pages/ExhibitInfoPage';
 import InfoLayout from './layout/InfoLayout';
 import MainLayout from './layout/MainLayout';
+import AdminPage from './pages/AdminPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<MainLayout/>}>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<TypesPage />} />
+    <Route>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<TypesPage />} />
+        </Route>
+        <Route path="/exhibit" element={<Exhibitslayout />}>
+          <Route path=':id' element={<ExhibitsPage />} />
+        </Route>
+        <Route path="/exhibit-info" element={<InfoLayout />}>
+          <Route path=':typeId/:id' element={<ExhibitInfoPage />} />
+        </Route>
+
       </Route>
-      <Route path="/exhibit" element={<Exhibitslayout />}>
-        <Route path=':id' element={<ExhibitsPage />} />
+
+      <Route path="/admin">
+        <Route index element={<AdminPage />} />
       </Route>
-      <Route path="/exhibit-info" element={<InfoLayout />}>
-        <Route path=':typeId/:id' element={<ExhibitInfoPage />} />
-      </Route>
+      
     </Route>
+
 
   )
 )
