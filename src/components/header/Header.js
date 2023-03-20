@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Image } from '@chakra-ui/react'
+import { HStack, Image } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import SignIn from '../forms/SignIn'
 import MenuComponent from './components/Menu'
+import Search from './components/Search'
 function Header() {
     const [logged, setLogged] = useState(false)
 
@@ -15,11 +16,16 @@ function Header() {
     }, [])
     return (
         <header>
-            <Image
-                boxSize='80px'
-                objectFit='cover'
-                src='http://collection.kunstkamera.ru/api/spf/Ajs0QiFcFV2BR8prUUur7Dmf7lFIk6J6LBChgFjEnHBWBcJE6xroTgWFlWhsu3h0.data'
-                alt='museum logo' />
+            {/* <HStack gap={"50px"}> */}
+                <Image
+                    boxSize='80px'
+                    objectFit='cover'
+                    src='http://collection.kunstkamera.ru/api/spf/Ajs0QiFcFV2BR8prUUur7Dmf7lFIk6J6LBChgFjEnHBWBcJE6xroTgWFlWhsu3h0.data'
+                    alt='museum logo' />
+
+                <Search />
+            {/* </HStack> */}
+
 
             <nav className='menu'>
                 {
@@ -30,12 +36,12 @@ function Header() {
                             <Link to={"/admin"}>Личный кабинет</Link>
 
                             {/* <SignIn /> */}
-                        </>) 
+                        </>)
                         : (<>
                             <Link to={"/"}>Категорий экспонатов</Link>
                             <MenuComponent />
                             <SignIn />
-                        </>) 
+                        </>)
                 }
             </nav>
         </header>

@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import {
     FormControl,
     FormLabel,
-    FormErrorMessage,
-    FormHelperText,
     Input,
     Text,
     Button
@@ -54,13 +52,6 @@ export default function Form() {
             <Button colorScheme='green' mt={5} style={{ marginLeft: "50%", transform: "translateX(-50%)" }} onClick={auth}>
                 Авторизоваться
             </Button>
-            {/* {!isError ? (
-                <FormHelperText>
-                    Enter the email you'd like to receive the newsletter on.
-                </FormHelperText>
-            ) : (
-                <FormErrorMessage>Email is required.</FormErrorMessage>
-            )} */}
         </FormControl>
     )
 }
