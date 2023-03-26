@@ -143,14 +143,14 @@ function DataTableRow(props) {
                                     <FormLabel>Название</FormLabel>
                                     <Input name="name" type='text' onChange={e => handleChange(e)} value={value.name} />
 
-                                    <FormLabel>Этническая принадлежность</FormLabel>
+                                    <FormLabel>Страна производитель</FormLabel>
                                     <Input name="ethnicity" type='text' onChange={e => handleChange(e)} value={value.ethnicity} />
 
-                                    <FormLabel>Место создания</FormLabel>
+                                    {/* <FormLabel>Место создания</FormLabel>
                                     <Input name="place_of_creation" type='text' onChange={e => handleChange(e)} value={value.place_of_creation} />
 
                                     <FormLabel>Географическая локализация места создания</FormLabel>
-                                    <Input name="geography" type='text' onChange={e => handleChange(e)} value={value.geography} />
+                                    <Input name="geography" type='text' onChange={e => handleChange(e)} value={value.geography} /> */}
 
                                     <FormLabel>Тип экспоната (ID)</FormLabel>
                                     <Input name="type_id" value={props.data.type_id} _placeholder={{ opacity: 1, color: '#171923' }} type='text' disabled={true} />
@@ -163,16 +163,16 @@ function DataTableRow(props) {
 
 
 
-                                    <FormLabel>Автор</FormLabel>
+                                    {/* <FormLabel>Автор</FormLabel>
                                     <Input name="author" type='text' onChange={e => handleChange(e)} value={value.author}
-                                        disabled={props.data.hasOwnProperty("author") ? false : true} />
+                                        disabled={props.data.hasOwnProperty("author") ? false : true} /> */}
 
 
 
 
-                                    <FormLabel>Собиратель-частное лицо</FormLabel>
+                                    {/* <FormLabel>Собиратель-частное лицо</FormLabel>
                                     <Input name="gatherer" type='text' onChange={e => handleChange(e)} value={value.gatherer}
-                                        disabled={props.data.hasOwnProperty("gatherer") ? false : true} />
+                                        disabled={props.data.hasOwnProperty("gatherer") ? false : true} /> */}
 
 
                                     {/* 
@@ -196,7 +196,7 @@ function DataTableRow(props) {
 
 
 
-                                    <FormLabel>Материал</FormLabel>
+                                    <FormLabel>Описание</FormLabel>
                                     <Input name="material" type='text' onChange={e => handleChange(e)} value={value.material} />
 
                                     <FormLabel>Размер</FormLabel>
@@ -205,20 +205,20 @@ function DataTableRow(props) {
 
 
 
-                                    <FormLabel>Аннотация</FormLabel>
+                                    {/* <FormLabel>Аннотация</FormLabel>
                                     <Input name="annotation" type='text'
                                         value={value.annotation}
                                         onChange={e => handleChange(e)}
-                                        disabled={props.data.hasOwnProperty("annotation") ? false : true} />
+                                        disabled={props.data.hasOwnProperty("annotation") ? false : true} /> */}
 
 
 
 
 
-                                    <FormLabel>Экспедиция</FormLabel>
+                                    {/* <FormLabel>Экспедиция</FormLabel>
                                     <Input name="expedition" type='text' value={value.expedition}
                                         onChange={e => handleChange(e)}
-                                        disabled={props.data.hasOwnProperty("expedition") ? false : true} />
+                                        disabled={props.data.hasOwnProperty("expedition") ? false : true} /> */}
 
 
                                     {/* {

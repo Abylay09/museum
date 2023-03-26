@@ -47,7 +47,7 @@ function Search() {
                                     }} onClick={() => navigate(`/exhibit-info/${item.type_id}/${item.id}`)} >
                                         <Image boxSize='100px'
                                             objectFit='contain' src={item.image} />
-                                        <Heading as='span' size='sm'> {item.name}</Heading>
+                                        <Heading as='span' size='sm' ml={3}> {item.name}</Heading>
 
                                     </Box>)}
                                 </Box>}

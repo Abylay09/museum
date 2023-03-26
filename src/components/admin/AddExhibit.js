@@ -98,14 +98,14 @@ function AddExhibit({ info, types, updatePage }) {
                             <FormLabel>Название</FormLabel>
                             <Input type='text' name="name" onChange={e => handleChange(e)} value={value.name} />
 
-                            <FormLabel>Этническая принадлежность</FormLabel>
+                            <FormLabel>Страна производитель</FormLabel>
                             <Input type='text' name="ethnicity" onChange={e => handleChange(e)} value={value.ethnicity} />
 
-                            <FormLabel>Место создания</FormLabel>
-                            <Input type='text' name="place_of_creation" onChange={e => handleChange(e)} value={value.place_of_creation} />
+                            {/* <FormLabel>Место создания</FormLabel>
+                            <Input type='text' name="place_of_creation" onChange={e => handleChange(e)} value={value.place_of_creation} /> */}
 
-                            <FormLabel>Географическая локализация места создания</FormLabel>
-                            <Input type='text' name="geography" onChange={e => handleChange(e)} value={value.geography} />
+                            {/* <FormLabel>Географическая локализация места создания</FormLabel>
+                            <Input type='text' name="geography" onChange={e => handleChange(e)} value={value.geography} /> */}
 
                             <FormLabel>Тип экспоната (ID)</FormLabel>
                             <Input _placeholder={{ opacity: 1, color: '#171923' }} type='text' disabled={true} placeholder={info[0].type_id} />
@@ -113,7 +113,7 @@ function AddExhibit({ info, types, updatePage }) {
                             <FormLabel>Время создания</FormLabel>
                             <Input name="creation_time" type='text' onChange={e => handleChange(e)} value={value.creation_time} />
 
-                            {
+                            {/* {
                                 info[0]?.hasOwnProperty("expedition") ? <>
                                     <FormLabel>Экспедиция</FormLabel>
                                     <Input name="annotation" type='text'
@@ -129,32 +129,32 @@ function AddExhibit({ info, types, updatePage }) {
                                         value={value.annotation}
                                         onChange={e => handleChange(e)} />
                                 </> : ""
-                            }
+                            } */}
 
-                            {
+                            {/* {
                                 info[0]?.hasOwnProperty("gatherer") ? <>
                                     <FormLabel> Собиратель-частное лицо</FormLabel>
                                     <Input type='text' name="gatherer" onChange={e => handleChange(e)} value={value.gatherer}
                                         disabled={info[0].hasOwnProperty("gatherer") ? false : true} />
                                 </> : ""
-                            }
+                            } */}
 
 
 
-                            <FormLabel>Материал</FormLabel>
+                            <FormLabel>Описание</FormLabel>
                             <Input name="material" type='text' onChange={e => handleChange(e)} value={value.material} />
 
                             <FormLabel>Размер</FormLabel>
                             <Input name="size" type='text' onChange={e => handleChange(e)} value={value.size} />
 
-                            {
+                            {/* {
                                 info[0]?.hasOwnProperty("annotation") ? <>
                                     <FormLabel>Аннотация</FormLabel>
                                     <Input name="annotation" type='text'
                                         value={value.annotation}
                                         onChange={e => handleChange(e)} />
                                 </> : ""
-                            }
+                            } */}
 
                             <FormLabel>Картинка</FormLabel>
                             <Input name="image" type='text' onChange={e => handleChange(e)} value={value.image} />

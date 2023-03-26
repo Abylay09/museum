@@ -52,23 +52,23 @@ function ExhibitInfoPage() {
                                             <Td>{info.name}</Td>
                                         </Tr>
                                         <Tr>
-                                            <Td>Этническая принадлежность</Td>
+                                            <Td>Страна производитель</Td>
                                             <Td>{info.ethnicity}</Td>
                                         </Tr>
-                                        <Tr>
+                                        {/* <Tr>
                                             <Td>Географическая локализация места создания</Td>
                                             <Td>{info.geography}</Td>
-                                        </Tr>
+                                        </Tr> */}
                                         <Tr>
                                             <Td>Время создания</Td>
                                             <Td>{info.creation_time ? info.creation_time : "-"}</Td>
                                         </Tr>
-                                        <Tr>
+                                        {/* <Tr>
                                             <Td>Собиратель-частное лицо</Td>
                                             <Td>{info.gatherer ? info.gatherer : "-"}</Td>
-                                        </Tr>
+                                        </Tr> */}
                                         <Tr>
-                                            <Td>Материал</Td>
+                                            <Td>Описание</Td>
                                             <Td>{info.material}</Td>
                                         </Tr>
                                         <Tr>

@@ -17,7 +17,8 @@
 .types-section {
     width: 100%;
     /* height: 100%; */
-    background-image: url("https://images.unsplash.com/photo-1576422498609-459417ced4b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1576422498609-459417ced4b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); */
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/2dfed013478569.562744d753359.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 0;

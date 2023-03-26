@@ -9,9 +9,9 @@ function MainLayout() {
             </div>
             <footer>
                 <h5>
-                    @ 2018 Музей антропологии и этнографии им. Петра Великого (Кунсткамера) Российской академии наук
+                    © Copyright 1995-2023 Museum.Computer - All Rights Reserved
                 </h5>
-                Все права защищены.
+
             </footer>
         </div>
     )

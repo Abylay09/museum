@@ -17,15 +17,15 @@ function MenuComponent() {
                 _expanded={{ bg: 'blue.400' }}
                 _focus={{ boxShadow: 'outline' }}
             >
-                Фотоколлекция <ChevronDownIcon />
+                Калькуляторы <ChevronDownIcon />
             </MenuButton>
             <MenuList>
-                <MenuItem onClick={() => navigate(`/exhibit/${2}`)}>Фотоколлекция</MenuItem>
-                <MenuItem onClick={() => navigate(`/exhibit/${3}`)}>Этнография Европы</MenuItem>
-                <MenuItem onClick={() => navigate(`/exhibit/${4}`)}>Этнография Сибири</MenuItem>
+                <MenuItem onClick={() => navigate(`/exhibit/${2}`)}>Калькуляторы</MenuItem>
+                <MenuItem onClick={() => navigate(`/exhibit/${3}`)}>Пейджеры</MenuItem>
+                <MenuItem onClick={() => navigate(`/exhibit/${4}`)}>Материнские платы</MenuItem>
                 <MenuDivider />
-                <MenuItem onClick={() => navigate(`/exhibit/${5}`)}>Этнография Америки</MenuItem>
-                <MenuItem onClick={() => navigate(`/exhibit/${6}`)}>Антропологические пластические реконструкции, прижизненные маски. XIX - XX вв.</MenuItem>
+                <MenuItem onClick={() => navigate(`/exhibit/${5}`)}>Видеокарты</MenuItem>
+                <MenuItem onClick={() => navigate(`/exhibit/${6}`)}>Процессоры</MenuItem>
             </MenuList>
         </Menu>
     )
